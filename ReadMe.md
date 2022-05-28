@@ -2,6 +2,9 @@
 * Java 1.8/1.11/1.15
 * Maven
 
+# Coding Challange Links :
+https://www.geektrust.com/coding/detailed/doremi-subscription
+
 # How to run the code
 
 We have provided scripts to execute the code. 
@@ -25,7 +28,29 @@ Internally both the scripts run the following commands
 
  `mvn clean test` will execute the unit test cases.
 
-# Help
+# Input Commands & Format
+ 
+START_SUBSCRIPTION DD-MM-YYYY <br />
+ADD_SUBSCRIPTION SUBSCRIPTION_CATEGORY PLAN_NAME <br />
+ADD_TOPUP TOP_UP_NAME NO_OF_MONTHS <br />
+PRINT_RENEWAL_DETAILS <br />
+Examples :<br />
+START_SUBSCRIPTION 20-02-2022 <br />
+ADD_SUBSCRIPTION MUSIC  PERSONAL <br />
+ADD_SUBSCRIPTION VIDEO PREMIUM <br />
+ADD_TOPUP ADD_TOPUP <br />
+PRINT_RENEWAL_DETAILS <br />
 
-You can refer our help documents [here](https://help.geektrust.com)
-You can read build instructions [here](https://github.com/geektrust/coding-problem-artefacts/tree/master/Java)
+
+INPUT : <br />
+START_SUBSCRIPTION20-02-2022 <br />
+ADD_SUBSCRIPTIONMUSIC PERSONAL <br />
+ADD_SUBSCRIPTIONVIDEO PREMIUM <br />
+ADD_SUBSCRIPTIONPODCAST FREE <br />
+ADD_TOPUPFOUR_DEVICE 3 <br />
+PRINT_RENEWAL_DETAILS	RENEWAL_REMINDERMUSIC 10-03-2022 <br />
+
+OUTPUT: <br />
+RENEWAL_REMINDERVIDEO 10-05-2022<br />
+RENEWAL_REMINDERPODCAST 10-03-2022<br />
+RENEWAL_AMOUNT750<br />
